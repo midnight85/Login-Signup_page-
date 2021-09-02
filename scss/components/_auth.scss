@@ -1,0 +1,227 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &__header {
+        background-color: #0e402d;
+        background-image: url("../img/logo_bg.svg");
+        background-repeat: no-repeat;
+        // background-size: contain;
+        background-position: top 0px right -90%;
+        padding: 30px 0;
+    }
+    &__logo {
+        margin-bottom: 23px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 40px;
+        color: rgba(255, 255, 255, 0.85);
+        &::after {
+            content: "";
+            display: block;
+            margin: 24px 0;
+            height: 1px;
+            width: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+    &__tabs-triggers {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    &__log-in-btn {
+    }
+    &__sign-up-btn {
+    }
+
+    &__content {
+        flex-grow: 1;
+        background: #08241a;
+        padding: 40px 0;
+        height: 100%;
+    }
+    &__log-in {
+    }
+}
+
+.tab-trigger {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+    padding: 18px 0;
+
+    &--active {
+        font-size: 22px;
+        border-bottom: 3px solid #ffffff;
+    }
+}
+
+.tab {
+    &--active {
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    &__input {
+        box-sizing: border-box;
+        padding: 28px 20px;
+        // position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // height: 74px;
+        background-color: rgba(255, 255, 255, 0.12);
+        border-radius: 10px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.6);
+
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.24);
+        }
+    }
+    &__lable {
+        position: absolute;
+        left: 20px;
+        top: 28px;
+        font-size: 18px;
+        color: #ffffff;
+        cursor: text;
+        transition: all 0.2s ease;
+    }
+    &::after {
+        content: "";
+        display: block;
+        // margin: 24px 0;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.submit-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox-wrapper {
+}
+#name {
+    background-image: url("../img/input_icons/user.svg");
+    background-position: top 50% right 20px;
+    background-repeat: no-repeat;
+}
+#email {
+    background-image: url("../img/input_icons/mail.svg");
+    background-position: top 50% right 20px;
+    background-repeat: no-repeat;
+}
+#tel {
+    background-image: url("../img/input_icons/call.svg");
+    background-position: top 50% right 20px;
+    background-repeat: no-repeat;
+}
+
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 20px;
+}
+
+.form__input:focus ~ .form__lable,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__lable {
+    top: -1.1rem;
+    left: 10px;
+    font-size: 14px;
+}
+// =====================CHECKBOX===================
+.checkbox-lable {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16 / 13 * 100%;
+    color: rgba(255, 255, 255, 0.65);
+}
+.terms-label{
+    max-width: 190px;
+    font-size: 11px;
+    line-height: 22 / 11 * 100%;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.terms-link{
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: underline;
+
+}
+.custom-checkbox + label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-checkbox + label::before {
+    content: "";
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 6px;
+    margin-right: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox + label:hover::before {
+    border-color: #ffffff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+    background-color: #b3d6ff49;
+}
+
+.custom-checkbox:checked + label::before {
+    background-image: url("/img/input_icons/checkbox.svg");
+}
+// =====================/CHECKBOX===================
+.submit-btn {
+    cursor: pointer;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color: #efe89d;
+    background-image: url("../img/input_icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.2s ease;
+    &:hover {
+        background-color: #aca561;
+    }
+}

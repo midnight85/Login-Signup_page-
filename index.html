@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="auth">
+            <div class="auth__header">
+                <div class="container">
+                    <div class="auth__logo"><img src="img/logo.svg" alt="logo"></div>
+                    <div class="auth__title">Continue to your Account.</div>
+                    <div class="auth__tabs-triggers">
+                        <a class="auth__log-in-btn tab-trigger tab-trigger--active" data-value="log-in">Log in</a>
+                        <a class="auth__sign-up-btn tab-trigger" data-value="sign-up">Sign Up</a>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.auth__header -->
+            <div class="auth__content">
+                <div class="container">
+                    <div class="auth__log-in tab tab--active" id="log-in">
+                        <form class="form" action="#">
+                            <div class="input-wrapper">
+                                <input class="form__input" type="text" id='email' autocomplete="off" placeholder=" ">
+                                <label class="form__lable" for="email">Email</label>
+                            </div>
+                            <!-- /.email-input -->
+                            <div class="input-wrapper">
+                                <input class="form__input" type="password" id='password' autocomplete="off"
+                                    placeholder=" ">
+                                <label class="form__lable" for="password">Password</label>
+                                <div class="password-toggle">
+                                    <img src="img/input_icons/show.svg" alt="">
+                                </div>
+                            </div>
+                            <!-- /.password-input -->
+                            <div class="submit-wrapper">
+                                <div class="checkbox-wrapper">
+                                    <input class="custom-checkbox" type="checkbox" value="lsRememberMe" id="rememberMe">
+                                    <label class="checkbox-lable" for="rememberMe">Remember me</label>
+                                </div>
+                                <input class="submit-btn" type="submit" value=" ">
+                            </div>
+                            <!-- /.submit-row -->
+                        </form>
+                    </div>
+                    <!-- /.auth__log-in -->
+                    <div class=" auth__sign-up tab" id="sign-up">
+                        <form class="form" action="#">
+                            <div class="input-wrapper">
+                                <input class="form__input" type="text" id='name' autocomplete="off" placeholder=" ">
+                                <label class="form__lable" for="name">Name</label>
+                            </div>
+                            <!-- /.name-input -->
+                            <div class="input-wrapper">
+                                <input class="form__input" type="text" id='email' autocomplete="off" placeholder=" ">
+                                <label class="form__lable" for="email">Email</label>
+                            </div>
+                            <!-- /.email-input -->
+                            <div class="input-wrapper">
+                                <input class="form__input" type="tel" id='tel' autocomplete="off" placeholder=" ">
+                                <label class="form__lable" for="tel">Phone</label>
+                            </div>
+                            <!-- /.tel-input -->
+                            <div class="input-wrapper">
+                                <input class="form__input" type="password" id='password' autocomplete="off"
+                                    placeholder=" ">
+                                <label class="form__lable" for="password">Password</label>
+                                <div class="password-toggle">
+                                    <img src="img/input_icons/show.svg" alt="">
+                                </div>
+                            </div>
+                            <!-- /.password-input -->
+                            <div class="submit-wrapper">
+                                <div class="checkbox-wrapper">
+                                    <input class="custom-checkbox" type="checkbox" value="lsRememberMe" id="rememberMe">
+                                    <label class="checkbox-lable terms-label" for="rememberMe"><span>I have read and agree to <a class="terms-link" href="#" target="_blank">Terms & Condition</a> of the Company</span></label>
+                                </div>
+                                <input class="submit-btn" type="submit" value=" ">
+                            </div>
+                            <!-- /.submit-row -->
+                        </form>
+                    </div>
+                    <!-- /.auth__log-in -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.auth__content -->
+        </div>
+        <!-- /.auth -->
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

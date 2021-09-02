@@ -1,0 +1,17 @@
+@import "reset";
+@import "fonts";
+
+.wrapper {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    // max-width: 1140px;
+    max-width: 362px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@import "components/auth";
