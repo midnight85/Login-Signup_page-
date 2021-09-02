@@ -1,6 +1,3 @@
-const tabBtns = document.querySelectorAll(".tab-trigger");
-const tabs = document.querySelectorAll(".tab");
-
 document.querySelectorAll(".tab-trigger").forEach((element) => {
     element.addEventListener("click", (e) => {
         const tabId = e.target.dataset.value;

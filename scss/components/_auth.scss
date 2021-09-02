@@ -58,6 +58,7 @@
     letter-spacing: -0.3px;
     color: #ffffff;
     padding: 18px 0;
+    transition: all .2s ease;
 
     &--active {
         font-size: 22px;
@@ -67,8 +68,19 @@
 
 .tab {
     display: none;
+    // transition: all 2s ease;
     &--active {
         display: block;
+        animation: show 1s;
+    }
+}
+@keyframes show{
+    0%{
+        
+        opacity: 0%;
+    }100%{
+        
+        opacity: 100%;
     }
 }
 
@@ -204,13 +216,8 @@
     border-color: #ffffff;
 }
 
-/* стили для активного чекбокса (при нажатии на него) */
-.custom-checkbox:not(:disabled):active + label::before {
-    background-color: #b3d6ff49;
-}
-
 .custom-checkbox:checked + label::before {
-    background-image: url("/img/input_icons/checkbox.svg");
+    background-image: url("../img/input_icons/checkbox.svg");
 }
 // =====================/CHECKBOX===================
 .submit-btn {

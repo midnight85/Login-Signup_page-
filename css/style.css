@@ -162,6 +162,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.3px;
   color: #ffffff;
   padding: 18px 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .tab-trigger--active {
@@ -175,6 +177,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .tab--active {
   display: block;
+  -webkit-animation: show 1s;
+          animation: show 1s;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .form {
@@ -335,13 +357,8 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #ffffff;
 }
 
-/* стили для активного чекбокса (при нажатии на него) */
-.custom-checkbox:not(:disabled):active + label::before {
-  background-color: #b3d6ff49;
-}
-
 .custom-checkbox:checked + label::before {
-  background-image: url("/img/input_icons/checkbox.svg");
+  background-image: url("../img/input_icons/checkbox.svg");
 }
 
 .submit-btn {
