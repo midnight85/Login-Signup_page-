@@ -27,18 +27,18 @@
             <div class="auth__content">
                 <div class="container">
                     <div class="tabs-content">
-                        <div class="auth__log-in tab" id="log-in">
+                        <div class="auth__log-in tab tab" id="log-in">
                             <form class="form" action="#">
                                 <div class="input-wrapper">
-                                    <input class="form__input" type="text" id='email' autocomplete="off" placeholder=" ">
+                                    <input class="form__input" name="" type="text" id='email' autocomplete="on" placeholder=" ">
                                     <label class="form__lable" for="email">Email</label>
                                 </div>
                                 <!-- /.email-input -->
-                                <div class="input-wrapper">
-                                    <input class="form__input" type="password" id='password' autocomplete="off"
+                                <div class="input-wrapper password-div">
+                                    <input class="form__input" name="" type="password" id='password' autocomplete="off"
                                         placeholder=" ">
-                                    <label class="form__lable" for="password">Password</label>
-                                    <div class="password-toggle">
+                                    <label class="form__lable" for="password">Password login</label>
+                                    <div class="password-toggle" onclick="showPass()">
                                         <img src="img/input_icons/show.svg" alt="">
                                     </div>
                                 </div>
@@ -57,25 +57,25 @@
                         <div class=" auth__sign-up tab" id="sign-up">
                             <form class="form" action="#">
                                 <div class="input-wrapper">
-                                    <input class="form__input" type="text" id='name' autocomplete="off" placeholder=" ">
+                                    <input class="form__input" name="username" type="text" id='username' autocomplete="off" placeholder=" ">
                                     <label class="form__lable" for="name">Name</label>
                                 </div>
-                                <!-- /.name-input -->
+                                <!-- /.username-input -->
                                 <div class="input-wrapper">
-                                    <input class="form__input" type="text" id='email' autocomplete="off" placeholder=" ">
+                                    <input class="form__input" name="email" type="text" id='email' autocomplete="off" placeholder=" ">
                                     <label class="form__lable" for="email">Email</label>
                                 </div>
                                 <!-- /.email-input -->
                                 <div class="input-wrapper">
-                                    <input class="form__input" type="tel" id='tel' autocomplete="off" placeholder=" ">
+                                    <input class="form__input" name="tel" type="tel" id='tel' autocomplete="off" placeholder=" ">
                                     <label class="form__lable" for="tel">Phone</label>
                                 </div>
                                 <!-- /.tel-input -->
-                                <div class="input-wrapper">
-                                    <input class="form__input" type="password" id='password' autocomplete="off"
+                                <div class="input-wrapper password-div">
+                                    <input class="form__input" name="password" type="password" id='password' autocomplete="off"
                                         placeholder=" ">
                                     <label class="form__lable" for="password">Password</label>
-                                    <div class="password-toggle">
+                                    <div class="password-toggle" onclick=showPass()>
                                         <img src="img/input_icons/show.svg" alt="">
                                     </div>
                                 </div>
@@ -87,6 +87,7 @@
                                     </div>
                                     <input class="submit-btn" type="submit" value=" ">
                                 </div>
+                                
                                 <!-- /.submit-row -->
                             </form>
                         </div>

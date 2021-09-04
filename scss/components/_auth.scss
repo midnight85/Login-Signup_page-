@@ -59,7 +59,7 @@
     color: #ffffff;
     padding: 18px 0;
     transition: all .2s ease;
-
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     &--active {
         font-size: 22px;
         border-bottom: 3px solid #ffffff;
@@ -156,11 +156,21 @@
 }
 
 .password-toggle {
+    display: grid;
+    place-items: center;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    right: 20px;
+    right: 10px;
+    width: 40px;
+    height: 50%;
+    // border-top-right-radius: 6px;
+    // border-bottom-right-radius: 6px;
+    // background-color: red;
+}
+.password--show{
+    filter: invert(1);
 }
 
 .form__input:focus ~ .form__lable,

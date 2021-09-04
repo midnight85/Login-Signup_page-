@@ -164,6 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 18px 0;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .tab-trigger--active {
@@ -284,12 +285,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .password-toggle {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   cursor: pointer;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  right: 20px;
+  right: 10px;
+  width: 40px;
+  height: 50%;
+}
+
+.password--show {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .form__input:focus ~ .form__lable,
