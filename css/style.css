@@ -388,4 +388,13 @@ h1, h2, h3, h4, h5, h6 {
 .submit-btn:hover {
   background-color: #aca561;
 }
+
+.disabled {
+  cursor: auto;
+  background-color: #5e5b39;
+}
+
+.disabled:hover {
+  background-color: #5e5b39;
+}
 /*# sourceMappingURL=style.css.map */

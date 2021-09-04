@@ -73,3 +73,16 @@ function showPass() {
     }
 }
 //  show password   //
+
+//  sign up check
+const terms = document.querySelector("#terms");
+const signupBtn = document.querySelector("#sign-up-btn");
+terms.addEventListener("change", (e) => {
+    if (terms.checked) {
+        signupBtn.classList.remove("disabled");
+    } else {
+        signupBtn.classList.add("disabled");
+    }
+});
+
+//  sign up check   //
