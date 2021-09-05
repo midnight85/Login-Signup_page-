@@ -18,7 +18,7 @@
                     <div class="auth__title">Continue to your Account.</div>
                     <div class="auth__tabs-triggers">
                         <a class="auth__log-in-btn tab-trigger" data-value="log-in">Log in</a>
-                        <a class="auth__sign-up-btn tab-trigger" data-value="sign-up">Sign Up</a>
+                        <a class="auth__sign-up-btn tab-trigger tab-trigger--active" data-value="sign-up">Sign Up</a>
                     </div>
                 </div>
                 <!-- /.container -->
@@ -27,13 +27,13 @@
             <div class="auth__content">
                 <div class="container">
                     <div class="tabs-content">
-                        <div class="auth__log-in tab tab" id="log-in">
+                        <!-- <div class="auth__log-in tab tab" id="log-in">
                             <form class="form" action="#">
                                 <div class="input-wrapper">
                                     <input class="form__input" name="" type="text" id='email' autocomplete="on" placeholder=" ">
                                     <label class="form__lable" for="email">Email</label>
                                 </div>
-                                <!-- /.email-input -->
+                               
                                 <div class="input-wrapper password-div">
                                     <input class="form__input" name="" type="password" id='password' autocomplete="off"
                                         placeholder=" ">
@@ -42,7 +42,7 @@
                                         <img src="img/input_icons/show.svg" alt="">
                                     </div>
                                 </div>
-                                <!-- /.password-input -->
+                                
                                 <div class="submit-wrapper">
                                     <div class="checkbox-wrapper">
                                         <input class="custom-checkbox" type="checkbox" value="lsRememberMe" id="rememberMe">
@@ -50,30 +50,29 @@
                                     </div>
                                     <input class="submit-btn" type="submit" value=" ">
                                 </div>
-                                <!-- /.submit-row -->
+                                
                             </form>
-                        </div>
+                        </div> -->
                         <!-- /.auth__log-in -->
-                        <div class=" auth__sign-up tab" id="sign-up">
+                        <div class=" auth__sign-up tab tab--active" id="sign-up">
                             <form class="form" action="#">
                                 <div class="input-wrapper">
-                                    <input class="form__input" name="username" type="text" id='username' autocomplete="off" placeholder=" ">
+                                    <input class="form__input" name="username" type="text" id='username' autocomplete="off" data-name="username" placeholder=" ">
                                     <label class="form__lable" for="name">Name</label>
                                 </div>
                                 <!-- /.username-input -->
                                 <div class="input-wrapper">
-                                    <input class="form__input" name="email" type="text" id='email' autocomplete="off" placeholder=" ">
+                                    <input class="form__input" name="email" type="text" id='email' autocomplete="off" data-name="email" placeholder=" ">
                                     <label class="form__lable" for="email">Email</label>
                                 </div>
                                 <!-- /.email-input -->
                                 <div class="input-wrapper">
-                                    <input class="form__input" name="tel" type="tel" id='tel' autocomplete="off" placeholder=" ">
+                                    <input class="form__input" name="tel" type="tel" id='tel' autocomplete="off" data-name="phone" placeholder=" ">
                                     <label class="form__lable" for="tel">Phone</label>
                                 </div>
                                 <!-- /.tel-input -->
                                 <div class="input-wrapper password-div">
-                                    <input class="form__input" name="password" type="password" id='password' autocomplete="off"
-                                        placeholder=" ">
+                                    <input class="form__input" name="password" type="password" id='password' autocomplete="off" data-name="password" placeholder=" ">
                                     <label class="form__lable" for="password">Password</label>
                                     <div class="password-toggle" onclick=showPass()>
                                         <img src="img/input_icons/show.svg" alt="">
@@ -85,7 +84,8 @@
                                         <input class="custom-checkbox" type="checkbox" value="lsTerms" id="terms">
                                         <label class="checkbox-lable terms-label" for="terms"><span>I have read and agree to <a class="terms-link" href="#" target="_blank">Terms & Condition</a> of the Company</span></label>
                                     </div>
-                                    <input class="submit-btn disabled" id="sign-up-btn" disabled='true' type="submit" value=" ">
+                                    <input class="submit-btn" id="sign-up-btn" type="submit" value=" ">
+                                    <!-- <input class="submit-btn " id="sign-up-btn"  type="submit" value=" "> -->
                                 </div>
                                 
                                 <!-- /.submit-row -->

@@ -397,4 +397,8 @@ h1, h2, h3, h4, h5, h6 {
 .disabled:hover {
   background-color: #5e5b39;
 }
+
+.err {
+  outline: 1px solid #ff0000;
+}
 /*# sourceMappingURL=style.css.map */
